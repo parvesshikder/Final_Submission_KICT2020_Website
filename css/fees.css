@@ -1,0 +1,46 @@
+.t1{
+  float: left;
+  width: 500px;
+}
+.t2{
+  float: left;
+  width: 500px;
+}
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+th, td {
+  padding: 10px 60px;
+  text-align: left;
+  border:1px solid #282C34;
+}
+td:hover{
+  background-color: #f2f2f2;
+}
+.AdditionalIstruction ul{
+  list-style: none;
+}
+.AdditionalIstruction ul li{
+  padding: 5px;
+}
+h1{
+  font-size: 35px;
+  color: green;
+}
+h3{
+  font-size: 30px;
+}
+td,li{
+  font-size: 20px;
+}
+.paymentCalculation{
+  padding: 30px;
+  font-size: 20px;
+}
+.paymentCalculation select,option{
+      padding: 12px 12px;
+      width:200px;
+}

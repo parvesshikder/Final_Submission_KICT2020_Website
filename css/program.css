@@ -1,0 +1,48 @@
+.program_information_page{
+background-color: #f5f5f5;
+
+}
+.Program h1{
+  padding: 20px;
+  text-align: center;
+}
+
+.conference{
+    background-color: #f5f5f5;
+    width: 500px;
+    padding: 30px;
+
+}
+.legend_part{
+    font-weight: 700;
+    color:red;
+    line-height: 55px;
+    font-size:30px;
+    width: 330px;
+    height: 63px;
+    margin-left: 0px;
+    margin-top: 68px;
+}
+.conferenceCommitee{
+  overflow: hidden;
+}
+.conference{
+  float: left;
+}
+.committee_image{
+  float: left;
+  width: 500px;
+}
+.committee_image img{
+  width: 95%;
+  padding: 5px;
+  padding-left: 30px;
+
+}
+.program_information_page{
+  overflow: hidden;
+}
+.text_over_image{
+  left:30%;
+  text-shadow: 3px 3px #131313;
+}

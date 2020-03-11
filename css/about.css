@@ -1,0 +1,23 @@
+.about_page_info{
+  padding: 30px;
+}
+.about_page_info h1{
+   font-size: 35px;
+   text-align: center;
+   padding: 20px;
+}
+.about_page_info p{
+  text-align: justify;
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.itro_video smal{
+  text-align: center;
+}
+.text_over_image{
+  left: 40%;
+}
+.link_image_padding li img{
+  padding:0px 7px;
+}

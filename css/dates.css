@@ -1,0 +1,32 @@
+
+  .img{
+      height: 500px;
+      width: 100%;
+  }
+legend{
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+table{
+  padding: 20px 0px;
+}
+.text_over_image{
+  left: 20%;
+}
+h2{
+  padding: 5px;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+
+p{
+  padding: 10px;
+  font-size: 20px;
+}

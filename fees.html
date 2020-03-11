@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ICT4M 2020</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="font/font.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/fees.css">
+  </head>
+  <body class="" style="background:#FFFFFF;">
+    <div class="conatiner_full main_header_bg">
+      <div class="container">
+        <div class="menu_title">
+          <a href="index.html" style="text-decoration:none;">
+              <h1 class="website_titel">ICT<span class="Number">4</span>M <span class="Number">2020</span> </h1>
+          </a>
+        </div>
+
+          <div class="menu_navbar">
+            <nav class="menu">
+
+              <ul>
+                <li>
+                  <a class="active" href="index.html">HOME</a>
+                </li>
+                <li class="">
+                  <a href="#">PROGRAM</a>
+                  <ul class="">
+                    <li>
+                      <a href="conferencecommittee.html">Conference Committee</a>
+                    </li>
+                    <li>
+                      <a href="programpage.html">Conference Program</a>
+                    </li>
+                    <li>
+                      <a href="parallal.html">Parallel session</a>
+                    </li>
+                  </ul>
+
+                </li>
+                <li>
+                  <a href="#">SUBMISSION</a>
+                  <ul class="">
+                    <li>
+                      <a href="Datesubmission.html">Important Dates and Guidlines</a>
+                    </li>
+                    <li>
+                      <a href="#">Fees</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">ABOUT</a>
+                </li>
+                <li>
+                  <a href="contact.html">CONTACT US</a>
+                </li>
+                <li>
+                  <a href="registration.html">REGISTRATION</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="Search_option">
+            <input class="search_box" type="text"/>
+            <button class="sesrch_button" type="button" name="button">Search</button>
+          </div>
+    	</div>
+    </div>
+
+  <div class="conatiner_full lead_image">
+      <img src="img/submission guideline.jpg">
+      <div class="text_over_image">
+        <h1>Fees</h1>
+      </div>
+</div>
+
+<div class="conatiner_full form_backgrund">
+  <div class="container">
+    <h1>FEES</h1>
+       <div class="t1">
+         <table class="">
+
+           <h3>International Perticipents</h3>
+
+           <tr>
+             <th>Type of Registration</th>
+             <th>Rate</th>
+           </tr>
+           <tr>
+             <td>Conference paper Presenter</td>
+             <td>RM 2000</td>
+           </tr>
+           <tr>
+             <td>Student Presenter</td>
+             <td>RM 1600</td>
+           </tr>
+           <tr>
+             <td>Participent</td>
+             <td>RM 700</td>
+           </tr>
+           </table>
+       </div>
+
+         <div class="t2">
+           <table class="">
+
+           <h3>Local Perticipents</h3>
+
+           <tr>
+             <th>Type of Registration</th>
+             <th>Rate</th>
+           </tr>
+           <tr>
+             <td>Conference paper Presenter</td>
+             <td>RM 1500</td>
+           </tr>
+           <tr>
+             <td>Student Presenter</td>
+             <td>RM 1000</td>
+           </tr>
+           <tr>
+             <td>Participent</td>
+             <td>RM 600</td>
+           </tr>
+
+         </table>
+
+         </div>
+  </div>
+
+</div>
+
+<div class="container AdditionalIstruction">
+  <ul>
+    <li>Additional papers from the same presenter will be charged RM500 per paper(up to 2 papers only)</li>
+    <li>A student presenter must provide proof of student status, such as student identification during registration</li>
+    <li>Conference registration includes access to all parallel sessions, invited speakers, meals, conference kit and a copy of the conference proceedings. </li>
+  </ul>
+</div>
+
+
+
+
+<br>
+
+  <div class="conatiner_full">
+    <div class="paymentCalculation container">
+      <select id="nationality" class="" name="">
+        <option value="0">Nationality</option>
+        <option value="1">Malaysian</option>
+        <option value="2">International</option>
+      </select>
+
+      <select id="type" class="" name="">
+        <option value="0">Type of Registration		</option>
+        <option value="1">Conference paper Presenter	</option>
+        <option value="2">Student Presenter	</option>
+        <option value="3">Participent</option>
+      </select>
+
+      <button style="padding:14px 20px; border:none; background:#4CAF50; color:#fff; font-weight:bold;" onclick="calculateCost();" type="button" name="button">Calculate Cost</button>
+    </div>
+  </div>
+
+  <div class="container" style="padding:5px;">
+    <h2>Total: <span id="cost"> 0.00</span> </h2>
+  </div>
+<br>
+
+<script type="text/javascript">
+
+
+  function calculateCost(){
+    var selector = document.getElementById('nationality');
+    var value = selector[selector.selectedIndex].value;
+
+
+    var typeselector = document.getElementById('type');
+    var typevalue = typeselector[typeselector.selectedIndex].value;
+
+    console.log(value);
+    console.log(typevalue);
+
+    if(value=="1" && typevalue=="1"){
+      document.getElementById('cost').innerHTML="1500";
+
+    }
+    else if(value=="1" && typevalue=="2"){
+      document.getElementById('cost').innerHTML="1000";
+
+    }
+    else if(value=="1" && typevalue=="3"){
+      document.getElementById('cost').innerHTML="600";
+
+    }
+    else if(value=="2" && typevalue=="1"){
+      document.getElementById('cost').innerHTML="2000";
+
+    }
+    else if(value=="2" && typevalue=="2"){
+      document.getElementById('cost').innerHTML="1600";
+
+    }
+    else if(value=="2" && typevalue=="3"){
+      document.getElementById('cost').innerHTML="700";
+
+    }
+
+
+
+
+  }
+
+</script>
+
+<div class="payment container">
+  <small style="display:block;" >*Please click on the PAY NOW button to proceed to the payment.</small>
+  <a href="#ex1" rel="modal:open" ><img style="height:100px;" src="img/paypal-pay-now-button.png.png" alt=""> </a>
+
+</div>
+
+
+
+
+
+
+<br>
+
+<div style="margin-top:30px;" class="conatiner_full footer_top_bg">
+  <div class="container">
+    <section class="footer_top">
+      <div class="footer_top_left">
+        <h2> <img src="img/footer_h2_bg.png" alt=""> Most Polular Pages</h2>
+        <ul>
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="index.html">ICT4M 2020</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="registration.html">Registration</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="Datesubmission.html">Important Date and Submission</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="fees.html">Fees</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_top_middle">
+        <h2> <img src="img/footer_h2_bg1.png" alt=""> <span> Archive</span> </h2>
+        <ul>
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="http://ict4m.iium.edu.my/home2018/">Home 2019 | ICT4M</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="http://ict4m.iium.edu.my/home2018/">Home 2018 | ICT4M</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="http://ict4m.iium.edu.my/home2018/">Home 2017 | ICT4M</a>
+          </li>
+
+          <li>
+            <img src="img/footer_tick_mark.png" alt="">
+            <a href="http://ict4m.iium.edu.my/home2018/">Home 2016 | ICT4M</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer_top_right">
+        <h2> <img src="img/footer_h2_bg2.png" alt=""> Twitter</h2>
+        <img class="twiter_back" style="height:150PX; width:330PX;" src="img/twitter_background.png" alt="">
+        <img class="twitter_pik" src="img/twitter_icon.png" alt="">
+
+      </div>
+    </section>
+  </div>
+</div>
+
+  <div class="conatiner_full main_footer_bg">
+    <div class="container">
+      <footer class="footer_main">
+        <p class="footer_text"> <span style="text-align:middle;">&copy;</span> Copyright 2019 ICT4M. All Right Reserved</p>
+        <div class="social_button">
+          <img src="img/facebook.png" alt="">
+          <img src="img/instagram.png" alt="">
+          <img src="img/linkedin.png" alt="">
+          <img src="img/twitter.png" alt="">
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  </body>
+</html>
